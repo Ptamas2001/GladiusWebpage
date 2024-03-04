@@ -1,0 +1,27 @@
+.animation-startButton{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 6rem;
+    width: 100vh;
+    align-items: center;
+    text-align: center;
+    margin-top: 300px;
+}
+@media screen and (max-width:540px) {
+    .animation-startButton{
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        width: 100vh;
+        align-items: center;
+        text-align: center;
+        margin-top: 70px;
+    }
+}
+.animation-startButton :hover{
+    color: white;
+    background-color: transparent;
+   
+}

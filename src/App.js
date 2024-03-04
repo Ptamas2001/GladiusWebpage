@@ -1,16 +1,22 @@
-import React from 'react';
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+//komponensek
+import Home from "./pages/Home/Home";
+
+
 
 function App() {
+  
+ 
+
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+     
+        <Router>
+          <Switch>
+            <Route path="/" exact component={Home} />
+          </Switch>
+        </Router>
     </div>
   );
 }

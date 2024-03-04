@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Birthstone&family=Imperial+Script&display=swap');
+
+
+
+
+.thirdContentContainer{
+    position: relative;
+}
+/*------------------------------------------------------------*/
+.thirdContentBackground{
+    background-image: url("../../../../public/images/militarywithweapon.jpg");
+    
+    height: 130vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.thirdContentBackgroundShadow{
+height: 100%;
+width: 100%;
+position: absolute;background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,0.6727065826330532) 18%, rgba(255,255,255,0) 27%, rgba(255,255,255,0) 55%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 69%, rgba(255,255,255,0) 88%, rgba(255,255,255,0) 90%);}
+/*-------------------------------------------------------------*/
+
+.thirdContentShort{
+    background-color: transparent;
+    height: 40vh;
+}
+
+
+.thirdContentWhiteBackground{
+    background-color: transparent;
+    width: 100%;
+    height: 60vh;
+}
+
+.thirdContentText {
+    background-color: transparent;   
+    padding-left: 5%; 
+    padding-right: 5%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.thirdContentTextWhiteBackground{
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(255,255,255,0.9051995798319328) 91%, rgba(255,255,255,0.8855917366946778) 100%);
+
+}
+.thirdContentTextColumn{
+    columns: 2;
+    background-color: transparent;
+    column-gap: 20rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+}
+.thirdContentTextColumn p{
+    font-size: 2rem;
+}
+/*------------------------------------------------------------*/
+
+.thirdContentText h1{
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
+}
+.thirdContentShort h1{
+  font-family: "Imperial Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 6rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.thirdContentShortNames{
+   
+background-color: transparent;
+display: flex;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between  ;
+}
+.thirdContentShortNames h2{
+    margin: 0;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+background-color: transparent;
+
+}
+/*----------------------------------------------------------*/
+.thirdContentShort{
+    background-color: transparent;
+    font-size: 3rem;
+    padding-top: 100px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-height: 400px;
+}
+.thirdContentShort hr{
+    width: 50%;
+}
+/*.-----------------------------------------------------------------------*/
+.thirdContentShortPositions{
+
+margin-top: 10px;
+padding: 0;
+background-color: transparent;
+display: flex;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between  ;
+margin-bottom: 0;
+}
+.thirdContentShortPositions p{
+    font-size: 2rem;
+    margin: 0;
+}
+@media screen and (max-width:1200px) {
+    .thirdContentBackground {
+        height: 60vh;
+        width: 100%;
+        position: relative; /* Adj hozzá relatív pozíciót a háttérhez */
+    }
+
+    .thirdContentWhiteBackground{
+        position: absolute;
+        height: 1%;
+        z-index: -1;
+    }
+    .thirdContentText {
+        position: relative; /* Váltás abszolút pozícióra */
+        bottom: 0; /* Igazítsa a szöveget a háttér aljához */
+        left: 0;
+        right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        transform: translateY(0%); /* Transzformáció a szöveg aljához való igazításhoz */
+    }
+
+    /* A többi stílus maradhat változatlan */
+
+    .thirdContentText h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .thirdContentTextColumn {
+        padding: 0;
+    }
+
+    .thirdContentShort {
+        padding: 0;
+        max-height: 300px;
+    }
+}
+@media screen and (max-width:800px) {
+    .thirdContentBackground{
+        height: 40vh;
+        width: 100%;
+    }
+    .thirdContentTextColumn{
+        columns: 1;
+    }
+    .thirdContentText{
+        width: 90%;
+    }
+    .thirdContentShortNames  {
+        width: 90%;
+    }
+    .thirdContentShortPositions{
+        width: 90%;
+    }
+    .thirdContentShort hr{
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px) {
+    .thirdContentText h1{
+        font-size: 3rem;
+    }
+    .thirdContentShort h1{
+        font-size: 5rem;
+    }
+}

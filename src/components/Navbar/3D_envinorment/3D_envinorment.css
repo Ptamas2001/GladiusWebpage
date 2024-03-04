@@ -1,0 +1,65 @@
+.home_rifle_shot_show{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    background-color: blue;
+}
+.Tittle-h1{
+    color: white;
+    font-size: 20rem;
+    width: 200vh;
+    text-align: center;
+    user-select: none;
+  
+}
+.click-to-start-h3{
+  color: white;
+    font-size: 6rem;
+    width: 200vh;
+    text-align: center;
+}
+/*..................................................*/
+@media screen and (max-width:1400px) {
+    .home_rifle_shot_show{
+        height: calc(70vw);
+        width: 100%;
+        z-index: 10;
+        background-color: blue;
+    }
+  
+        
+    .Tittle-h1{
+        color: white;
+        font-size: 10rem;
+        width: 160vh;
+        text-align: center;
+    
+    }
+    .click-to-start-h3{
+    color: white;
+        font-size: 4rem;
+        width: 200vh;
+        text-align: center;
+    }
+}
+@media screen and (max-width:540px) {
+    
+        
+    .Tittle-h1{
+        color: white;
+        font-size: 2rem;
+        width: 160vh;
+        text-align: center;
+    
+    }
+    .click-to-start-h3{
+    color: white;
+        font-size: 1rem;
+        width: 200vh;
+        text-align: center;
+    }
+}
+
+
+
+  

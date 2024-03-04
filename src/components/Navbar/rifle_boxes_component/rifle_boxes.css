@@ -1,0 +1,95 @@
+.Rifle_boxes_maincontainer {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: +2;
+    margin-top: calc(100% - 30% *3.6 ); /* A felső margó beállítása a képernyő magasságából és a container magasságából számolva */
+    background-color: black;
+}
+
+.riflebox1,
+.riflebox2,
+.riflebox3{
+    background-color: brown;
+    height: 270px;
+    width: 30%;
+    z-index: 1;
+}
+.riflebox1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCB19gUcSGFGLWDXW8PK9hUISDMyxCMmQWqo7GPMAuJohdbaAkYpvjWEEndCe9ZtOECu4&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+}
+.riflebox2{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/154/81/132/weapons-background-machine-assault-rifle-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.riflebox3{
+    background-image: url("https://cdn.rockislandauction.com/dev_cdn/2048/619.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1370px) {
+    .riflebox1,
+    .riflebox2,
+    .riflebox3{
+    background-color: brown;
+    height: 60%;
+    width: 30%;
+}
+.Rifle_boxes_maincontainer {
+    margin-top: calc(100% - 30% *3.7); /* A felső margó beállítása a képernyő magasságából és a container magasságából számolva */
+}
+}
+@media screen and (max-width:860px) {
+    .riflebox1,
+    .riflebox2,
+    .riflebox3{
+    background-color: brown;
+    height: 60%;
+    width: 30%;
+}
+.Rifle_boxes_maincontainer {
+    margin-top: calc(100% - 30% *3.7); /* A felső margó beállítása a képernyő magasságából és a container magasságából számolva */
+}
+}
+@media screen and (max-width:750px) {
+    .riflebox1,
+    .riflebox2,
+    .riflebox3{
+    background-color: brown;
+    height: 80%;
+    width: 30%;
+}
+.Rifle_boxes_maincontainer {
+    margin-top: calc(100% - 30% *3.7); /* A felső margó beállítása a képernyő magasságából és a container magasságából számolva */
+}
+.Rifle_boxes_maincontainer {
+    padding-left: 40px;
+    padding-right: 40px;
+   }
+}
+@media screen and (max-width:560px) {
+    .riflebox1,
+    .riflebox2,
+    .riflebox3{
+    background-color: brown;
+    height: 80%;
+    width: 100%;
+    margin: 0;
+}
+.Rifle_boxes_maincontainer {
+    margin-top: calc(100% - 30% *3.7); /* A felső margó beállítása a képernyő magasságából és a container magasságából számolva */
+}
+.Rifle_boxes_maincontainer {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100% ;
+   padding: 0;
+   background-color: blue;
+   }
+}

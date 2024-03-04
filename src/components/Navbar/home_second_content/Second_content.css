@@ -1,0 +1,128 @@
+.second_container_head{
+    background: rgb(6,6,6);
+    width: 100%;
+
+}
+.second_container{
+    background-image: url("https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/1504/1895974/1000w_q95.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    margin-top: 0;
+    
+}
+.second_container h1 {
+    margin-top: 0;
+}
+/*------------------------------------------------------*/
+.histoy-box{
+    margin-top: 0;
+    width: 50%;
+    float: right;
+    height: 90%;
+    padding-right: 20px;
+    position: relative;
+    
+}
+.histoy-box h1{
+    
+    font-size: 6rem;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.histoy-box h3{
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .histoy-box h1{
+        line-height: 10px;
+        font-size: 6rem;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .histoy-box h3{
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 870px) and (max-width: 1024px) {
+    .second_container{
+        background-image: url("https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/1504/1895974/1000w_q95.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 70vh;
+        color: white;
+        margin-top: 0;
+    }
+    .histoy-box{
+        margin-top: 0;
+        height: 90%;
+        width: 90%;
+        height: 100%;
+        padding: 50px;
+    }
+    .history-box-shadow{
+       display: none;
+    }
+    .histoy-box h1{
+        line-height: 10px;
+        font-size: 6rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .histoy-box h3{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+    
+}
+@media screen and (max-width: 640px) and (max-width: 1024px) {
+ 
+    .histoy-box h1{
+        line-height: 10px;
+        font-size: 4rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .histoy-box h3{
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+    .histoy-box{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 470px) and (max-width: 1024px) {
+ 
+    .histoy-box h1{
+        line-height: 10px;
+        font-size: 2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .histoy-box h3{
+        font-size: 0.7rem;
+        line-height: 20px;
+    }
+    .histoy-box{
+        width: 80%;
+    }
+    
+}
+
+/*----------------------------------------------------------*/
+.history-box-shadow{
+    background: rgb(0,0,0);
+background: linear-gradient(270deg, rgba(0,0,0,0.8379726890756303) 3%, rgba(0,0,0,0.8127626050420168) 33%, rgba(0,0,0,0.7707457983193278) 47%, rgba(0,0,0,0.036852240896358524) 93%);
+width: 100%;
+height: 100vh;
+position: absolute;
+opacity: 0.7;
+}

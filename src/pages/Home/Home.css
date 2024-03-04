@@ -1,0 +1,200 @@
+.home_first_content{
+    width: 100%;
+    height: 100%;
+
+    
+   
+}
+.home_container{
+  background-color: transparent;
+  
+    
+}
+.Sldeshow_text_container {
+    color: white;
+    position: absolute;
+    top: 200px; /* Alulra igazítjuk */
+    left: 50%;
+    transform: translateX(-50%); /* Középre igazítjuk a vízszintes tengelyen */
+    width: 100%;
+    text-align: center;
+    z-index:1; /* Adj hozzá egy magasabb z-index-et a slideshow alatt */
+  }
+
+  
+.Sldeshow_text_container h1 {
+    font-size: 6rem;
+}
+.Sldeshow_text_container h2 {
+    font-size: 4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:1370px) {
+    .Sldeshow_text_container {
+        top: 15%;
+    }
+    .Sldeshow_text_container h1 {
+        font-size: 3rem;
+    }
+    .Sldeshow_text_container h2 {
+        font-size: 2rem;
+       
+    }
+}
+.slideshow_shopnow {
+    background-color: #3a059e;
+    width: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.slideshow_shopnow:hover {
+    background-color: black;
+    border-color: rgb(255, 0, 212);
+}
+
+.slideshow_shopnow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #3a059e, transparent);
+    transition: left 0.3s ease-in-out;
+}
+
+.slideshow_shopnow:hover::before {
+    left: 100%;
+}
+@media screen and (max-width:860px) {
+    .slideshow_shopnow {
+      
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 1.5rem;
+        
+    }
+}
+@media screen and (max-width:750px) {
+
+    .Sldeshow_text_container h1 {
+        margin-top: 3rem;
+       
+    }
+    .Sldeshow_text_container h2 {
+        margin-top: 5rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slideshow_shopnow {
+        background-color: orangered;
+        width: 40%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 1.5rem;
+        border-radius: 40px;
+        border: 2px solid transparent;
+        position: relative;
+        overflow: hidden;
+        color: white;
+    }
+   
+}
+
+.lets-start-box{
+    background-image: url("https://t3.ftcdn.net/jpg/03/01/62/46/360_F_301624679_YFpD83z6oZ65ptmYhDxVZs3ARkuGWT4v.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    color: white;
+}
+.lets-start-box-shadow{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: rgb(6,6,6);
+    background: linear-gradient(0deg, rgba(6,6,6,1) 33%, rgba(0,0,0,0.938813025210084) 54%, rgba(0,0,0,0.7539390756302521) 73%, rgba(0,0,0,0) 100%);
+}
+.lets-start-box h1 {
+    font-size: 8rem;
+    font-weight: bold;
+}
+.lets-start-box h2 {
+    font-size: 7rem;
+}
+
+@media screen and (max-width:560px) {
+    .lets-start-box{
+        background-image: url("https://t3.ftcdn.net/jpg/03/01/62/46/360_F_301624679_YFpD83z6oZ65ptmYhDxVZs3ARkuGWT4v.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top:300px;
+        padding-bottom: 120px;
+        text-align: center;
+        color: white;
+    }
+    .lets-start-box h1 {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    .lets-start-box h2 {
+        font-size: 5rem;
+    }
+    .lets-start-box-shadow{
+        display: none   ;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: rgb(6,6,6);
+    background: linear-gradient(0deg, rgba(6,6,6,1) 33%, rgba(0,0,0,0.938813025210084) 54%, rgba(0,0,0,0.7539390756302521) 73%, rgba(0,0,0,0) 100%);
+}
+
+}
+.purple{
+    color: #900fc2;
+}
+.third-content-before{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    background-color: black;
+}
+.third-content-before h1{
+    font-size: 5rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.overlay-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fekete átlátszó háttér */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Adj neki magasabb z-indexet, mint a többi elemnek */
+    color: white; /* Szöveg színe a div-en belül */
+  }
+  
+  .overlay-content {
+    text-align: center;
+  }
